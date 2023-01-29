@@ -32,3 +32,5 @@ function musicData() {
     },
   ];
 }
+
+export default musicData;
