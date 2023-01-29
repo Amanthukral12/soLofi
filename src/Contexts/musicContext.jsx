@@ -3,7 +3,7 @@ import musicData from "../data/data";
 
 export const Music = createContext();
 
-const Context = ({ children }) => {
+const MusicContext = ({ children }) => {
   const [pause, setPause] = useState(true);
   const [muted, setMuted] = useState(true);
   const [data, setData] = useState(musicData());
@@ -26,4 +26,4 @@ const Context = ({ children }) => {
   );
 };
 
-export default Context;
+export default MusicContext;
