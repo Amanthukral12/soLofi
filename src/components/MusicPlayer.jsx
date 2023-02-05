@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Music } from "../Contexts/musicContext";
 import RandomGif from "./RandomGif";
+import YTWrapper from "./YTWrapper";
 
 const MusicPlayer = () => {
   const { currentSong, nextVideo, prevVideo, playPause } = useContext(Music);
@@ -8,7 +9,8 @@ const MusicPlayer = () => {
   return (
     <div>
       <RandomGif />
-      <p>Current Song Name</p>
+      <YTWrapper />
+      <p>{currentSong.name}</p>
       <div>
         <button onClick={() => prevVideo()}>Prev</button>
         <button onClick={() => playPause()}>Play</button>
