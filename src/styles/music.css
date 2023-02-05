@@ -1,0 +1,33 @@
+.app {
+    text-align: center;
+}
+.parent {
+    position: relative;
+    top: 0;
+    height: 70vh;
+}
+
+.giphy {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    height: 70vh;
+    width: 70vw;
+}
+
+.youtube {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    height: 70vh;
+    width: 70vw;
+}
+
+button {
+    position: relative;
+   
+  }

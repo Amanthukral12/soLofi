@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { RandomGifs } from "../Contexts/randomGifContext";
+import "../styles/music.css";
 const RandomGif = () => {
   const { gif, setGif } = useContext(RandomGifs);
   const getRandomGif = () => {
@@ -13,11 +14,7 @@ const RandomGif = () => {
     getRandomGif();
   }, []);
 
-  return (
-    <div>
-      <img src={gif} alt="" />
-    </div>
-  );
+  return <img className="giphy" src={gif} alt="" />;
 };
 
 export default RandomGif;
