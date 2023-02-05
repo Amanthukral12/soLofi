@@ -8,6 +8,34 @@ const MusicContext = ({ children }) => {
   const [muted, setMuted] = useState(true);
   const [data, setData] = useState(musicData());
   const [currentSong, setCurrentSong] = useState(data[0]);
+  const nextVideo = () => {
+    let currentIndex = data.findIndex(
+      (song) => song.index === currentSong.index
+    );
+    if (currentIndex === data.length - 1) {
+      currentIndex = 0;
+      setCurrentSong(data[currentIndex]);
+    } else {
+      setCurrentSong(data[currentIndex + 1]);
+    }
+  };
+  const prevVideo = () => {
+    let currentIndex = data.findIndex(
+      (song) => song.index === currentSong.index
+    );
+    if (currentIndex === 0) {
+      currentIndex = data.length - 1;
+      setCurrentSong(data[currentIndex]);
+    } else {
+      setCurrentSong(data[currentIndex - 1]);
+    }
+  };
+
+  const playPause = () => {
+    setPause(!pause);
+    setMuted(!muted);
+  };
+
   return (
     <Music.Provider
       value={{
@@ -19,6 +47,9 @@ const MusicContext = ({ children }) => {
         setData,
         currentSong,
         setCurrentSong,
+        nextVideo,
+        prevVideo,
+        playPause,
       }}
     >
       {children}
