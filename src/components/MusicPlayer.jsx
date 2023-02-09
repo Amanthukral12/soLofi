@@ -12,7 +12,6 @@ import "../styles/music.css";
 const MusicPlayer = () => {
   const { currentSong, nextVideo, prevVideo, playPause, pause } =
     useContext(Music);
-  console.log(currentSong);
   return (
     <div className="app">
       <div className="parent">

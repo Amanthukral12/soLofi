@@ -12,7 +12,7 @@ const RandomGif = () => {
 
   useEffect(() => {
     getRandomGif();
-  }, []);
+  });
 
   return <img className="giphy" src={gif} alt="" />;
 };
