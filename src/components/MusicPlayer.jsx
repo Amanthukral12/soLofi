@@ -2,9 +2,16 @@ import React, { useContext } from "react";
 import { Music } from "../Contexts/musicContext";
 import RandomGif from "./RandomGif";
 import YTWrapper from "./YTWrapper";
+import {
+  BiSkipNext,
+  BiPlayCircle,
+  BiSkipPrevious,
+  BiPauseCircle,
+} from "react-icons/bi";
 import "../styles/music.css";
 const MusicPlayer = () => {
-  const { currentSong, nextVideo, prevVideo, playPause } = useContext(Music);
+  const { currentSong, nextVideo, prevVideo, playPause, pause } =
+    useContext(Music);
   console.log(currentSong);
   return (
     <div className="app">
@@ -12,12 +19,17 @@ const MusicPlayer = () => {
         <RandomGif />
         <YTWrapper />
       </div>
-
-      <p>{currentSong.name}</p>
-      <div>
-        <button onClick={() => prevVideo()}>Prev</button>
-        <button onClick={() => playPause()}>Play</button>
-        <button onClick={() => nextVideo()}>Next</button>
+      <span className="songName">{currentSong.name}</span>
+      <div className="buttonContainer">
+        <div className="icon" onClick={() => prevVideo()}>
+          <BiSkipPrevious />
+        </div>
+        <div className="icon" onClick={() => playPause()}>
+          {pause ? <BiPlayCircle /> : <BiPauseCircle />}
+        </div>
+        <div className="icon" onClick={() => nextVideo()}>
+          <BiSkipNext />
+        </div>
       </div>
     </div>
   );
