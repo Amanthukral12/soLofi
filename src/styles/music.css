@@ -53,16 +53,40 @@
     bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
     background-color: #8b60f6;
     color: white;
     padding: 10px 0px;
+}
+
+.buttonContainerLeft {
+    display: flex;
+    width: 60%;
+    margin-left: 15px;
+}
+
+.volume {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.volumeIcon {
+    font-size: 2rem;
+}
+
+.slider {
+    width: 80%;
+    margin-left: 10px;
+ 
 }
 
 .icon {
     font-size: 3rem;
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 
 .icon:hover {
