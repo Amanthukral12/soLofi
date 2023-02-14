@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Music } from "../Contexts/musicContext";
 import "../styles/music.css";
 const YTWrapper = () => {
-  const { currentSong, muted, pause } = useContext(Music);
+  const { currentSong, muted, pause, volume } = useContext(Music);
   return (
     <YouTube
       video={currentSong.id}
@@ -13,6 +13,7 @@ const YTWrapper = () => {
       autoplay
       controls={true}
       suggestedQuality="240"
+      volume={volume}
       paused={pause}
       disableKeyboard={false}
       className="youtube"

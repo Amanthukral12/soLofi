@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Music } from "../Contexts/musicContext";
 import RandomGif from "./RandomGif";
 import YTWrapper from "./YTWrapper";
@@ -10,8 +10,20 @@ import {
 } from "react-icons/bi";
 import "../styles/music.css";
 const MusicPlayer = () => {
-  const { currentSong, nextVideo, prevVideo, playPause, pause } =
-    useContext(Music);
+  const {
+    currentSong,
+    nextVideo,
+    prevVideo,
+    playPause,
+    pause,
+    volume,
+    setVolume,
+  } = useContext(Music);
+
+  const handleVolume = (e) => {
+    console.log(parseFloat(e.target.value));
+    setVolume(parseFloat(e.target.value));
+  };
   return (
     <div className="app">
       <div className="parent">
@@ -29,6 +41,14 @@ const MusicPlayer = () => {
         <div className="icon" onClick={() => nextVideo()}>
           <BiSkipNext />
         </div>
+        <input
+          type="range"
+          value={volume}
+          min={0}
+          max={1}
+          step={0.01}
+          onChange={handleVolume}
+        />
       </div>
     </div>
   );

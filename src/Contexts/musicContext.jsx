@@ -8,6 +8,7 @@ const MusicContext = ({ children }) => {
   const [muted, setMuted] = useState(true);
   const [data, setData] = useState(musicData());
   const [currentSong, setCurrentSong] = useState(data[0]);
+  const [volume, setVolume] = useState(1);
   const nextVideo = () => {
     let currentIndex = data.findIndex(
       (song) => song.index === currentSong.index
@@ -50,6 +51,8 @@ const MusicContext = ({ children }) => {
         nextVideo,
         prevVideo,
         playPause,
+        volume,
+        setVolume,
       }}
     >
       {children}
