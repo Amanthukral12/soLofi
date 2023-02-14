@@ -7,10 +7,11 @@
     position: relative;
     top: 0;
     height: 70vh;
+   
     background-image: linear-gradient(
         0deg,
         rgb(247, 247, 247) 23.8%,
-        rgb(252, 221, 221) 92%
+        rgb(252, 221, 251) 92%
       );
 }
 
@@ -48,14 +49,20 @@
 }
 
 .buttonContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    color: #8b60f6;
+    background-color: #8b60f6;
+    color: white;
+    padding: 10px 0px;
 }
 
 .icon {
     font-size: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .icon:hover {
