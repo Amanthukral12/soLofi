@@ -1,73 +1,84 @@
 .app {
     text-align: center;
-    height: 80vh;
-    
+    height: 100vh;
+    background-color: black;
 }
 .parent {
-    position: relative;
+    display: flex;
     top: 0;
-    height: 70vh;
-   
-    background-image: linear-gradient(
-        0deg,
-        rgb(247, 247, 247) 23.8%,
-        rgb(252, 221, 251) 92%
-      );
+    height: 75vh;
+    background-color: black;
+    color: azure;
+    justify-content: center;
+}
+
+
+.songImage {
+    position: relative;
+    width: 100%;
 }
 
 .giphy {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 10%;
+    transform: translate(-10%, 0);
     z-index: 2;
-    height: 60vh;
-    width: 50vw;
-    border-radius: 15px;
-    box-shadow: 0 20px 20px 0 #8a60f665;
-    border: 1px solid #8b60f6;
+    height: 100vh;
+    width: 100%;
+    
 }
 
 
 
 .youtube {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 1%;
+    left: 10%;
+    transform: translate(-10%, 0);
     z-index: 1;
-    height: 60vh;
-    width: 50vw;
+    height: 99vh;
+    width: 90%;
     border-radius: 15px;
-}
-
-.songName {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    color: #8b60f6;
 }
 
 .buttonContainer {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 5%;
+    width: 80%;
     display: flex;
-    background-color: #8b60f6;
+    height: 7vh;
+    z-index: 5;
+    justify-content: center;
     color: white;
     padding: 10px 0px;
+    background-color: rgb(77, 76, 76);
+    opacity: 0.7;
+    border-radius: 15px;
 }
 
 .buttonContainerLeft {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    width: 60%;
-    margin-left: 15px;
+    width: 30%;  
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.buttonContainerMiddle {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+   
 }
 
 .volume {
-    width: 40%;
+    width: 30%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -77,7 +88,7 @@
 }
 
 .slider {
-    width: 80%;
+    width: 70%;
     margin-left: 10px;
  
 }

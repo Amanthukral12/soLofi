@@ -1,13 +1,17 @@
 .navbar {
-    background-color: #8b60f6;
     display: flex;
-    padding-left: 2rem;
+    position: absolute;
+    width: 20%;
     align-items: center;
+    justify-content: center;
+    z-index: 5 !important;
+    background-color: transparent;
+    margin-left: 40%;
 }
 
 .logo {
-    height: 60px;
-    width: 60px;
+    height: 49px;
+    width: 49px;
     margin: 10px 10px;
 }
 
