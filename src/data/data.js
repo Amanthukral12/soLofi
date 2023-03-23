@@ -3,27 +3,57 @@ function musicData() {
     {
       index: 0,
       id: "Qt0-9mO-ZXY",
-      name: "Space Lofi Hip Hop Radio 24/7 🚀",
+      name: "🚀 Space Lofi",
     },
     {
       index: 1,
       id: "7NOSDKb0HlU",
-      name: "lofi hip hop radio - beats to study/relax to 🐾 ",
+      name: "🐾 lofi hip hop",
     },
     {
       index: 2,
       id: "5yx6BWlEVcY",
-      name: "Chillhop Radio - jazzy & lofi hip hop beats 🐻",
+      name: "🐻 Chillhop Radio",
     },
     {
       index: 3,
-      id: "MCkTebktHVc",
-      name: "College Music - 24/7 lofi hip hop radio",
+      id: "epaP2LCCuVE",
+      name: "🦊 Shiloh Dynasty ",
     },
     {
       index: 4,
       id: "eyGPIpZ7208",
-      name: "🔴 Relaxing Music for Studying 24/7, Ocean Wave Sounds",
+      name: "🔴 Ocean Wave Sounds",
+    },
+    {
+      index: 5,
+      id: "0M9FVUq1B9U",
+      name: "🥭 Relax Your Mind",
+    },
+    {
+      index: 6,
+      id: "jfKfPfyJRdk",
+      name: "🎉 Lofi Girl Hip Hop",
+    },
+    {
+      index: 7,
+      id: "rUxyKA_-grg",
+      name: "😴 Lofi Sleep/Chill",
+    },
+    {
+      index: 8,
+      id: "kgx4WGK0oNU",
+      name: "🌱 Jazz Hip Hop",
+    },
+    {
+      index: 9,
+      id: "qmI2YCrod00",
+      name: "📚 Lofi Study Beats",
+    },
+    {
+      index: 10,
+      id: "e3L1PIY1pN8",
+      name: "☕ Coffee Shop Radio",
     },
   ];
 }
